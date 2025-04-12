@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ultimate Gaming</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('./images/l.avif') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #00FF00;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            margin-top: 80px; /* To create space below the navbar */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00FF00;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #bbb;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00FF00;
+            border: none;
+            border-radius: 5px;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+            display:block;
+      text-decoration:none;
+            text-align:center;
+
+        }
+
+        button:hover {
+            background-color: #00cc00;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signup-link a {
+            color: #00FF00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <a class="button" href="home.html">Login</a>
+
+        </form>
+
+        <div class="signup-link">
+            <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+        </div>
+    </div>
+</body>
+</html>

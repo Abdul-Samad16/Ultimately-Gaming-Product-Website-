@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Gaming - Products</title>
+  <style>
+    /* Resetting default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('./images/a.avif') no-repeat center center/cover;
+      background-attachment: fixed;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding-top: 60px;
+    }
+
+    /* Header Section */
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      color: #00FF00;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #00FF00;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00FF00;
+      color: #121212;
+      transform: scale(1.1);
+    }
+
+    /* Product Section */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 120px;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px; /* Set a fixed height */
+      object-fit: cover; /* Ensures images fill the container without distortion */
+      border-radius: 5px;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #00FF00;
+    }
+
+    .product-info p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #ffcc00;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .product-info .cta-button {
+      padding: 12px 30px;
+      background-color: #00FF00;
+      color: #121212;
+      text-decoration: none;
+      font-size: 1.3rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .product-info .cta-button:hover {
+      background-color: #00cc00;
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Ultimate Gaming Products</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Product Section -->
+  <div class="product-container">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="./images/mouse.jpeg" alt="Gaming Mouse">
+
+      <div class="product-info">
+        <h3>Gaming Mouse</h3>
+        <p>High-performance wireless gaming mouse with customizable RGB lighting and ultra-precise sensor.</p>
+        <p class="price">$79.99</p>
+        <a href="product-detail.html" class="cta-button">View Product</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="./images/headset.jpeg" alt="Gaming Headset">
+      <div class="product-info">
+        <h3>Gaming Headset</h3>
+        <p>Noise-canceling headphones with immersive surround sound and comfortable ear padding.</p>
+        <p class="price">$149.99</p>
+        <a href="product-detail.html" class="cta-button">View Product</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="./images/keyboard.jpeg" alt="Gaming Keyboard">
+      <div class="product-info">
+        <h3>Gaming Keyboard</h3>
+        <p>Mechanical keyboard with responsive keys, customizable macros, and RGB lighting.</p>
+        <p class="price">$129.99</p>
+        <a href="product-detail.html" class="cta-button">View Product</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="./images/chair.jpeg" alt="Gaming Chair">
+      <div class="product-info">
+        <h3>Gaming Chair</h3>
+        <p>Ergonomic design with adjustable armrests, lumbar support, and a comfortable recline function.</p>
+        <p class="price">$349.99</p>
+        <a href="product-detail.html" class="cta-button">View Product</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
